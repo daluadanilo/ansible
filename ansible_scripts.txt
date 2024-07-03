@@ -1,0 +1,31 @@
+Instale o PIP antes:
+# apt install python3-pip
+
+Instala Ansible:
+# pip3 install ansible
+
+Instala Ansible no CentOS RedHat:
+# rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+# yum install epel-release
+# yum -y install ansible
+
+Instala no Ubuntu/Debian:
+# apt-add-repository -y ppa:ansible/ansible
+# apt-get update
+# apt-get install -y ansible
+
+Instala o Ansible Lint 5.0.8 (Maio/2021):
+# pip3 install ansible-lint
+
+Fazer upgrade:
+# pip install --upgrade ansible
+
+Baixe o projeto do Linuxtips:
+# git clone https://github.com/badtuxx/descomplicando-ansible-2020.git
+
+Ver versão do Ansible instalado (v 2.10.9):
+# ansible --version
+
+Crie diretório básico:
+# mkdir /etc/ansible/
+
