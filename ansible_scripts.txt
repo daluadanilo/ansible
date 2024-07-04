@@ -29,3 +29,18 @@ Ver versão do Ansible instalado (v 2.10.9):
 Crie diretório básico:
 # mkdir /etc/ansible/
 
+
+Crie arquivo hosts, pode criar grupos de IP os domain name, se comunica com porta SSH.
+# touch /etc/ansible/hosts
+[hostsdan]
+192.168.2.184
+192.168.2.185 ansible_connection=ssh        ansible_user=root
+srvbbb.local:2222
+
+# Server Check.in distribution-based groups.
+[centos:children]
+servercheck-web
+servercheck-db
+servercheck-nodejs
+servercheck-backup
+(o ansible reclama de caracteres especiais -_.)
